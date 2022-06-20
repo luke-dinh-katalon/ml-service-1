@@ -40,13 +40,13 @@ try:
 
     # add to ML Registry
     registry.add_algorithm(endpoint_name="income_classifier",
-    algorithm_object= et,
-    algorithm_name="extra tree",
-    algorithm_version="0.0.1",
-    algorithm_status="production",
-    owner="Luke",
-    algorithm_description="Extra-tree with simple pre- and post-processing",
-    algorithm_code=inspect.getsource(ExtraTreesClassifier))
+                            algorithm_object= et,
+                            algorithm_name="extra tree",
+                            algorithm_version="0.0.1",
+                            algorithm_status="production",
+                            owner="Luke",
+                            algorithm_description="Extra-tree with simple pre- and post-processing",
+                            algorithm_code=inspect.getsource(ExtraTreesClassifier))
 
 except Exception as e:
     print("Exception while loading the algorithms to the registry,", str(e))
